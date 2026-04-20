@@ -2,9 +2,9 @@ import { Tabs } from 'expo-router';
 import React from 'react';
 
 import { HapticTab } from '@/components/haptic-tab';
-import { IconSymbol } from '@/components/ui/icon-symbol';
 import { Colors } from '@/constants/theme';
 import { useColorScheme } from '@/hooks/use-color-scheme';
+import { Text } from 'react-native';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -19,17 +19,45 @@ export default function TabLayout() {
         tabBarStyle: { backgroundColor: '#b4bad4' },
       }}>
       <Tabs.Screen
-        name="index"
+        name="q1"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          title: 'q1',
+          tabBarIcon: ({ color }) => <Text style={{ color }}>q1</Text>,
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="q2"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: 'q2',
+          tabBarIcon: ({ color }) => <Text style={{ color }}>q2</Text>,
+        }}
+      />
+      <Tabs.Screen
+        name="q3"
+        options={{
+          title: 'q3',
+          tabBarIcon: ({ color }) => <Text style={{ color }}>q3</Text>,
+        }}
+      />
+      <Tabs.Screen
+        name="q4"
+        options={{
+          title: 'q4',
+          tabBarIcon: ({ color }) => <Text style={{ color }}>q4</Text>,
+        }}
+      />
+      <Tabs.Screen
+        name="q5"
+        options={{
+          title: 'q5',
+          tabBarIcon: ({ color }) => <Text style={{ color }}>q5</Text>,
+        }}
+      />
+      <Tabs.Screen
+        name="q6"
+        options={{
+          title: 'q6',
+          tabBarIcon: ({ color }) => <Text style={{ color }}>q6</Text>,
         }}
       />
     </Tabs>
