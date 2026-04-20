@@ -1,39 +1,39 @@
-import CardContainer from "@/components/card/card-container";
-import CardContent from "@/components/card/card-content";
+import FlexContainer from "@/components/flex/flex-container";
+import FlexItem from "@/components/flex/flex-item";
 import React from "react";
 import { StyleSheet, View } from "react-native";
 
 const Q2 = () => {
   return (
     <View style={styles.container}>
-      <CardContainer style={{ gap: "30%" }}>
+      <FlexContainer style={{ gap: "30%" }}>
         <>
-          <CardContent style={styles.circle} />
-          <CardContent style={styles.circle} />
-          <CardContent style={styles.circle} />
+          <FlexItem style={styles.circle} />
+          <FlexItem style={styles.circle} />
+          <FlexItem style={styles.circle} />
         </>
-      </CardContainer>
-      <CardContainer style={{justifyContent: "space-around"}}>
+      </FlexContainer>
+      <FlexContainer style={{justifyContent: "space-around"}}>
         <>
-          <CardContent style={styles.square}/>
-          <CardContent style={styles.square}/>
-          <CardContent style={styles.square}/>
+          <FlexItem style={styles.square}/>
+          <FlexItem style={styles.square}/>
+          <FlexItem style={styles.square}/>
         </>
-      </CardContainer>
-      <CardContainer style={{paddingTop: 100}}>
+      </FlexContainer>
+      <FlexContainer style={{paddingTop: 100}}>
         <>
-          <CardContent style={styles.rectangle} />
-          <CardContent style={styles.rectangle} />
-          <CardContent style={styles.rectangle} />
-          <CardContent style={styles.rectangle} />
+          <FlexItem style={styles.rectangle} />
+          <FlexItem style={styles.rectangle} />
+          <FlexItem style={styles.rectangle} />
+          <FlexItem style={styles.rectangle} />
         </>
-      </CardContainer>
-      <CardContainer style={{justifyContent: "center"}}>
+      </FlexContainer>
+      <FlexContainer style={{justifyContent: "center"}}>
         <>
-          <CardContent style={styles.square}/>
-          <CardContent style={styles.square}/>
+          <FlexItem style={styles.square}/>
+          <FlexItem style={styles.square}/>
         </>
-      </CardContainer>
+      </FlexContainer>
     </View>
   );
 };
