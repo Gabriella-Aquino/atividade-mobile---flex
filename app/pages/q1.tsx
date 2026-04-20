@@ -1,5 +1,5 @@
-import CardContainer from "@/components/card/card-container";
-import CardContent from "@/components/card/card-content";
+import FlexContainer from "@/components/flex/flex-container";
+import FlexItem from "@/components/flex/flex-item";
 import CustomButton from "@/components/customButton";
 import React from "react";
 import { StyleSheet, View } from "react-native";
@@ -12,20 +12,20 @@ const Q1 = () => {
         <CustomButton text={"Perfil"} />
       </View>
 
-      <CardContainer>
-        <CardContent />
-      </CardContainer>
+      <FlexContainer>
+        <FlexItem style={styles.defaultAspectRatio} />
+      </FlexContainer>
 
-      <CardContainer>
+      <FlexContainer>
         <>
-          <CardContent />
-          <CardContent />
+          <FlexItem style={styles.defaultAspectRatio} />
+          <FlexItem style={styles.defaultAspectRatio} />
         </>
-      </CardContainer>
+      </FlexContainer>
 
-      <CardContainer>
-        <CardContent style={{ aspectRatio: 16 / 4 }} />
-      </CardContainer>
+      <FlexContainer>
+        <FlexItem style={{ aspectRatio: 16 / 4 }} />
+      </FlexContainer>
     </View>
   );
 };
@@ -39,6 +39,9 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     paddingTop: 20,
     gap: 15,
+  },
+  defaultAspectRatio: {
+    aspectRatio: 16 / 9,
   },
 });
 

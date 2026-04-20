@@ -1,23 +1,23 @@
 import React from "react";
-import { StyleSheet, Text, View, ViewStyle } from "react-native";
+import { StyleSheet, View, ViewStyle } from "react-native";
 
-interface CardContainerProps {
+interface FlexContainerProps {
   style?: ViewStyle;
   children: React.ReactElement;
 }
 
-const CardContainer = ({ children, style }: CardContainerProps) => {
+const FlexContainer = ({ children, style }: FlexContainerProps) => {
   return (
-    <View style={[styles.cardContainer, style]}>
+    <View style={[styles.flexContainer, style]}>
       {children}
     </View>
   );
 };
 
-export default CardContainer;
+export default FlexContainer;
 
 const styles = StyleSheet.create({
-  cardContainer: {
+  flexContainer: {
     flexDirection: "row",
     borderWidth: 1,
     borderColor: "#535b83",
