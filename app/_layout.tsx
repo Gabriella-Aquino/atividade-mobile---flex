@@ -29,7 +29,7 @@ export default function RootLayout() {
   return (
     <ThemeProvider value={CustomTheme}>
       <SafeAreaProvider>
-        <SafeAreaView style={{ flex: 1, paddingHorizontal: 20, backgroundColor: APP_BACKGROUND }}>
+        <SafeAreaView style={{ flex: 1, paddingHorizontal: 20, backgroundColor: APP_BACKGROUND, paddingTop:50 }}>
           <Stack screenOptions={{ contentStyle: { backgroundColor: APP_BACKGROUND } }}>
             <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
             <Stack.Screen
