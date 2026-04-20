@@ -7,11 +7,7 @@ interface FlexContainerProps {
 }
 
 const FlexContainer = ({ children, style }: FlexContainerProps) => {
-  return (
-    <View style={[styles.flexContainer, style]}>
-      {children}
-    </View>
-  );
+  return <View style={[styles.flexContainer, style]}>{children}</View>;
 };
 
 export default FlexContainer;
@@ -23,6 +19,6 @@ const styles = StyleSheet.create({
     borderColor: "#535b83",
     borderRadius: 15,
     padding: 20,
-    gap: 15
+    gap: 15,
   },
 });
